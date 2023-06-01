@@ -1,8 +1,6 @@
 # 💻  API Node.JS
 API Rest Node.JS
 
-Testes de mudança de data
-
 ## 🛠 Tecnologias
 As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
 
