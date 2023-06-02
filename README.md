@@ -1,6 +1,8 @@
 # 💻  API Node.JS
 API Rest Node.JS
 
+Commit dia 02/06
+
 ## 🛠 Tecnologias
 As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
 
