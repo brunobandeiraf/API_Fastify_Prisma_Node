@@ -9,7 +9,8 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[TypeScript.JS](https://www.typescriptlang.org/)**
 - **[Fastify](https://fastify.dev/)**
 - **[Prisma](https://www.prisma.io/)**
-
+- **[Docker](https://www.docker.com/)**
+- **[Vitest](https://vitest.dev/)**
 
 ## 📄 RFs (Requisitos funcionais)
 - [ ] Deve ser possível cadastrar uma pessoa;
