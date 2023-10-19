@@ -27,3 +27,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - npm i fastify
 - npm i dotenv
 - npm i zod
+- npm i prisma -D 
+- npx prisma init
+- npx prisma generate
+- npm i @prisma/cliente
