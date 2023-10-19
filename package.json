@@ -1,0 +1,23 @@
+{
+  "name": "api_fastify_prisma_node",
+  "version": "1.0.0",
+  "description": "API Rest Node.JS",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "tsup": "^7.2.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "fastify": "^4.24.2"
+  }
+}

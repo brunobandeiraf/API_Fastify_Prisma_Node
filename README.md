@@ -19,3 +19,9 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - [ ] Deve ser possível visualizar uma pessoa;
 - [ ] Deve ser possível editar uma pessoa;
 - [ ] Deve ser possível excluir uma pessoa;
+
+## Comando
+- npm init -y
+- npm i typescript @types/node tsx tsup -D
+- npx tsc --init 
+- npm i fastify
