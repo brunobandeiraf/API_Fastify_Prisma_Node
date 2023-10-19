@@ -1,7 +1,6 @@
 # 💻  API Node.JS
 API Rest Node.JS
 
-Commit dia 02/06
 
 ## 🛠 Tecnologias
 As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do projeto:
@@ -34,3 +33,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - docker run --name api_prisma_node -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=api_prisma_node -p 5432:5432 bitnami/postgresql
 - npx prisma migrate dev
 - npx prisma studio
+<!-- Subir ou executar a aplicação docker-->
+- docker compose up -d 
+<!-- Parar a aplicação docker-->
+- docker compose stop
