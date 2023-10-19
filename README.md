@@ -31,3 +31,6 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - npx prisma init
 - npx prisma generate
 - npm i @prisma/cliente
+- docker run --name api_prisma_node -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=api_prisma_node -p 5432:5432 bitnami/postgresql
+- npx prisma migrate dev
+- npx prisma studio
