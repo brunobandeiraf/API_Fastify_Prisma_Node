@@ -15,8 +15,22 @@ datasource db {
 // uuid é um id universalmente único
 // @@map irá renomear a tabela no db
 model User {
-  id    String @id @default(uuid())
-  name  String
-  email String @unique
+  id            String @id @default(uuid())
+  name          String
+  email         String @unique
+  password_hash String?
+
+  department   Department @relation(fields: [department_Id], references: [id])
+  department_Id String
+
   @@map("users")
+}
+
+model Department {
+  id   String @id @default(uuid())
+  name String
+
+  users User[] // Usuário pode ter vários Departamentos
+
+  @@map("departments")
 }
