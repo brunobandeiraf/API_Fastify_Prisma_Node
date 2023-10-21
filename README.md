@@ -13,8 +13,8 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Vitest](https://vitest.dev/)**
 
 ## 📄 RFs (Requisitos funcionais)
-- [ ] Deve ser possível cadastrar uma pessoa;
-- [ ] Deve ser possível visualizar todas as pessoas;
+- [x] Deve ser possível cadastrar uma pessoa;
+- [x] Deve ser possível visualizar todas as pessoas;
 - [ ] Deve ser possível visualizar uma pessoa;
 - [ ] Deve ser possível editar uma pessoa;
 - [ ] Deve ser possível excluir uma pessoa;
