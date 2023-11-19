@@ -1,7 +1,8 @@
 import { FastifyReply, FastifyRequest } from 'fastify'
 import { z } from 'zod'
 
-import { usersRegisterUseCase } from '@/use-cases/users-register'
+import { PrismaUsersRepository } from '@/repositories/prisma-users-repository'
+import { UsersRegisterUseCase } from '@/use-cases/users-register'
 
 export async function register(request: FastifyRequest, reply: FastifyReply) {
     // Valida os dados recebido com Zod
@@ -13,7 +14,14 @@ export async function register(request: FastifyRequest, reply: FastifyReply) {
 
     // Executa a função do Use-Case
     try {
-        await usersRegisterUseCase({
+        // Prisma - como repositório definido
+        const usersRepository = new PrismaUsersRepository()
+
+        // Use Case - utilizando o repositório Prisma
+        const registerUseCase = new UsersRegisterUseCase(usersRepository)
+        
+        // Executando o Use Case
+        await registerUseCase.execute({
             name,
             email,
         })
