@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma'
+import { UsersRepository } from '@/repositories/users-repository'
 
 // Interface para validar/Esperar os tipos de Entrada
 interface RegisterUseCaseRequest {
@@ -8,16 +8,12 @@ interface RegisterUseCaseRequest {
 
 export class UsersRegisterUseCase {
 
-    constructor(private usersRepository: any) {}
+    constructor(private usersRepository: UsersRepository) {}
     
     async execute({ name, email }: RegisterUseCaseRequest) {
 
         // Verifica se o e-mail é único
-        const userWithSameEmail = await prisma.user.findUnique({
-            where: {
-                email,
-            },
-        })
+        const userWithSameEmail = await this.usersRepository.findByEmail(email)
 
         // Error se e-mail do usuário já existe
         if (userWithSameEmail) {
